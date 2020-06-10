@@ -1,0 +1,81 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.7.RELEASE")
+    }
+}
+
+group 'com.sigsauer'
+version '1.0-SNAPSHOT'
+
+configure(allprojects) { project ->
+
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+
+
+    sourceCompatibility = 11
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        //Spring Boot Web Application
+        implementation      'org.springframework.boot:spring-boot-starter-web'
+        //Thymeleaf (Java Template Engine) for HTML processing
+        implementation      'org.springframework.boot:spring-boot-starter-thymeleaf'    //starter thymeleaf
+        //Lombok Annotation Processor
+        compileOnly         'org.projectlombok:lombok'                          //lombok plugin
+        annotationProcessor 'org.projectlombok:lombok'
+
+        //Libraries for Testing
+        testImplementation  'org.springframework.boot:spring-boot-starter-test'
+        testImplementation  'junit:junit:4.12'                                          //junit
+    }
+}
+
+wrapper {
+    version = "5.6.2"
+}
+
+project(":security") {
+    bootJar{
+        enabled = false;
+    }
+
+    jar{
+        enabled = true
+    }
+
+    dependencies {
+        //Spring Security Framework
+//      implementation    'org.springframework.boot:spring-boot-starter-security'      //security
+    }
+}
+
+project(":lending") {
+    bootJar{
+        enabled = false;
+    }
+    jar{
+        enabled = true
+    }
+
+    dependencies {
+        //Spring Data JPA for database processing
+        implementation      'org.springframework.boot:spring-boot-starter-data-jpa'
+        //Gson - JSON Data Processor
+        implementation      'com.google.code.gson:gson'
+        //Driver for H2 Database
+        runtimeOnly         'com.h2database:h2'
+
+
+    }
+}

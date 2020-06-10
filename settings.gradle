@@ -1,0 +1,4 @@
+rootProject.name = 'epsiloan'
+include 'security'
+include 'lending'
+
