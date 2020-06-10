@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "minAmount": 0.0,
+  "maxAmount": 0.0,
+  "termPeriod": "INF",
+  "minTerm": 0,
+  "maxTerm": 0,
+  "feeStrategy": "INF",
+  "feeValue": 0.0,
+  "rateStrategy": "INF",
+  "rateValue": 0.0,
+  "penaltyStrategy": "INF",
+  "penaltyValue": 0.0,
+  "prolongationStrategy": "INF",
+  "prolongationValue": 0.0,
+  "prolongationTermPeriod": "INF",
+  "prolongationTermValue": 0,
+  "prolongationAccrualStrategy": "INF",
+  "prolongationAccrualValue": 0.0,
+  "gracePeriod": "INF",
+  "graceValue": 0
+}

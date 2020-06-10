@@ -1,5 +1,5 @@
 # Project exclude paths
 /.gradle/
 /lending/build/
-/lending/build/classes/java/main/
-/lending/build/classes/java/test/
+/.idea/
+/gradle/

@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "title": "default",
+  "description": "default description",
+  "creatingUser": {
+    "id": 1,
+    "username": "System"
+  },
+  "creatingDate": "2020-06-05",
+  "properties": {
+    "id": 1,
+    "minAmount": 0.0,
+    "maxAmount": 0.0,
+    "termPeriod": "INF",
+    "minTerm": 0,
+    "maxTerm": 0,
+    "feeStrategy": "INF",
+    "feeValue": 0.0,
+    "rateStrategy": "INF",
+    "rateValue": 0.0,
+    "penaltyStrategy": "INF",
+    "penaltyValue": 0.0,
+    "prolongationStrategy": "INF",
+    "prolongationValue": 0.0,
+    "prolongationTermPeriod": "INF",
+    "prolongationTermValue": 0,
+    "prolongationAccrualStrategy": "INF",
+    "prolongationAccrualValue": 0.0,
+    "gracePeriod": "INF",
+    "graceValue": 0
+  },
+  "configured": false
+}
